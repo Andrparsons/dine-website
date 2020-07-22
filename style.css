@@ -1,0 +1,201 @@
+:root {
+  /* colours */
+  --beaver: #9e7f66;
+  --codGray: #111111;
+  --mirage: #17192b;
+  --ebonyClay: #242b37;
+  --shuttleGray: #5c6779;
+  --white: #ffffff;
+
+  /* type */
+  --h1: 2em;
+  --h2: 2em;
+  --h3: 1.125em;
+  --h4: 0.875em;
+  --b1: 0.9375em;
+  --b2: 0.9375em;
+  --fs-btn: 0.875em;
+
+  /* elevation  */
+  --level-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --level-2: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --level-3: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --level-4: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --level-5: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+  /* colour intentions */
+  --primaryText: var(--mirage);
+  --bgDark: var(--codGray);
+}
+
+@media (min-width: 500px) {
+  :root {
+    --h1: 4em;
+    --h2: 2.5em;
+    --h3: 1.125em;
+    --h4: 0.875em;
+    --b1: 1.125em;
+    --b2: 0.9375em;
+    --fs-btn: 0.875em;
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: var(--h1);
+  font-weight: 300;
+  line-height: 1.25;
+  letter-spacing: -0.4px;
+  margin: 0.9em 0 0 0;
+}
+
+h2 {
+  font-size: var(--h2);
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.4px;
+  margin: 0.9em 0 0 0;
+}
+
+h3 {
+  font-size: var(--h3);
+  font-weight: 700;
+  line-height: 1.55;
+  letter-spacing: -0.22px;
+}
+
+h4 {
+  font-size: var(--h4);
+  font-weight: 600;
+  line-height: 2;
+  letter-spacing: 2px;
+}
+
+header {
+  background-image: url("./images/homepage/hero-bg-mobile@2x.jpg");
+  background-size: cover;
+  color: var(--white);
+  padding-top: 14.5rem;
+  padding-bottom: 9.5em;
+  /* fallback incase pic doesn't load */
+  background-color: var(--bgDark);
+}
+
+footer {
+  background-color: var(--bgDark);
+  color: var(--white);
+}
+
+/* buttons */
+
+button {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: var(--fs-btn);
+  padding: 1.55em 3.75em;
+  letter-spacing: 2px;
+  line-height: 1.25;
+  margin-top: 1.25em;
+}
+
+button:disabled {
+  opacity: 0.25;
+}
+
+.btn-dark {
+  color: var(--white);
+  border: 1.5px solid var(--white);
+  background-color: var(--bgDark);
+}
+
+.btn-dark:hover:enabled {
+  background-color: var(--white);
+  color: var(--bgDark);
+  border: 1.5px solid var(--bgDark);
+  cursor: pointer;
+}
+
+.btn-transparent {
+  background: transparent;
+}
+
+.container {
+  padding: 0 1.5rem;
+}
+
+.logo {
+  max-width: 5.15em;
+}
+
+.body-1 {
+  font-size: var(--b1);
+  line-height: 1.67;
+  letter-spacing: -0.1875px;
+  margin-top: 1.6em;
+}
+
+.body-2 {
+  font-size: var(--b2);
+  line-height: 1.86;
+  letter-spacing: -0.19px;
+}
+
+.pattern-divide {
+  margin-top: 2.75em;
+}
+
+/* about section */
+
+.about-pic-1 {
+  box-shadow: var(--level-5);
+  position: relative;
+  margin-top: -4.5rem;
+}
+
+.about .body-1 {
+  margin-top: 1em;
+}
+
+/* menu highlight */
+.menu-highlight {
+  background: var(--bgDark);
+  color: var(--white);
+}
+
+.menu-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+/* reservation section */
+.reserve {
+  background: var(--bgDark);
+  color: var(--white);
+  background-image: url("./images/homepage/ready-bg-mobile@2x.jpg");
+}

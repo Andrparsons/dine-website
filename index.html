@@ -165,56 +165,90 @@
 
     <div class="events">
       <div class="container">
-        <h4>
-          Family Gathering
-        </h4>
-        <h4>
-          Special Events
-        </h4>
-        <h4>
-          Social Events
-        </h4>
+        <div class="tabs">
+          <img
+            role="tabpanel"
+            aria-labelledby="family"
+            class="visible-tab"
+            src="./images/homepage/family-gathering-mobile@2x.jpg"
+          />
+          <img
+            role="tabpanel"
+            aria-labelledby="special"
+            class="hidden-tab"
+            src="./images/homepage/special-events-mobile@2x.jpg"
+          />
+          <img
+            role="tabpanel"
+            aria-labelledby="social"
+            class="hidden-tab"
+            src="./images/homepage/social-events-mobile@2x.jpg"
+          />
+          <div role="tablist" aria-label="Events">
+            <h4 role="tab" aria-selected="true" id="family">
+              Family Gathering
+            </h4>
+            <h4 role="tab" aria-selected="false" id="special">
+              Special Events
+            </h4>
+            <h4 role="tab" aria-selected="false" id="social">
+              Social Events
+            </h4>
+          </div>
 
-        <div class="event-container">
-          <h2>
-            Family Gathering
-          </h2>
-          <p>
-            We love catering for entire families. So please bring everyone along
-            for a special meal with your loved ones. We’ll provide a memorable
-            experience for all.
-          </p>
-          <button class="btn-dark">
-            Book a table
-          </button>
-        </div>
+          <div
+            class="event-container visible-tab"
+            role="tabpanel"
+            aria-labelledby="family"
+          >
+            <h2>
+              Family Gathering
+            </h2>
+            <p>
+              We love catering for entire families. So please bring everyone
+              along for a special meal with your loved ones. We’ll provide a
+              memorable experience for all.
+            </p>
+            <button class="btn-dark">
+              Book a table
+            </button>
+          </div>
 
-        <div class="event-container">
-          <h2>
-            Special Events
-          </h2>
-          <p>
-            Whether it’s a romantic dinner or special date you’re celebrating
-            with others we’ll look after you. We’ll be sure to mark your special
-            date with an unforgettable meal.
-          </p>
-          <button class="btn-dark">
-            Book a table
-          </button>
-        </div>
+          <div
+            class="event-container hidden-tab"
+            role="tabpanel"
+            aria-labelledby="special"
+          >
+            <h2>
+              Special Events
+            </h2>
+            <p>
+              Whether it’s a romantic dinner or special date you’re celebrating
+              with others we’ll look after you. We’ll be sure to mark your
+              special date with an unforgettable meal.
+            </p>
+            <button class="btn-dark">
+              Book a table
+            </button>
+          </div>
 
-        <div class="event-container">
-          <h2>
-            Social Events
-          </h2>
-          <p>
-            Are you looking to have a larger social event? No problem! We’re
-            more than happy to cater for big parties. We’ll work with you to
-            make your event a hit with everyone.
-          </p>
-          <button class="btn-dark">
-            Book a table
-          </button>
+          <div
+            class="event-container hidden-tab"
+            role="tabpanel"
+            aria-labelledby="social"
+          >
+            <h2>
+              Social Events
+            </h2>
+            <p>
+              Are you looking to have a larger social event? No problem! We’re
+              more than happy to cater for big parties. We’ll work with you to
+              make your event a hit with everyone.
+            </p>
+            <button class="btn-dark">
+              Book a table
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -242,5 +276,6 @@
         Open Times Mon - Fri: 09:00 AM - 10:00 PM Sat - Sun: 09:00 AM - 11:30 PM
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>

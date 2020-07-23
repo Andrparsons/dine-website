@@ -213,6 +213,17 @@ button:disabled {
   border-bottom: none;
 }
 
+/* events section */
+
+/* event tabs */
+.visble-tab {
+  display: block;
+}
+
+.hidden-tab {
+  display: none;
+}
+
 /* reservation section */
 .reserve {
   background: var(--bgDark);

@@ -4,6 +4,7 @@
   --codGray: #111111;
   --mirage: #17192b;
   --ebonyClay: #242b37;
+  --darkGray: #4c4c4c;
   --shuttleGray: #5c6779;
   --white: #ffffff;
 
@@ -77,7 +78,7 @@ h2 {
   font-weight: 700;
   line-height: 1.25;
   letter-spacing: -0.4px;
-  margin: 0.9em 0 0 0;
+  margin: 0;
 }
 
 h3 {
@@ -94,6 +95,7 @@ h4 {
   line-height: 2;
   letter-spacing: 2px;
   text-transform: uppercase;
+  margin: 1.15em 0 0 0;
 }
 
 header {
@@ -156,6 +158,10 @@ button:disabled {
   max-width: 5.15em;
 }
 
+.logo-footer {
+  max-width: 6.5em;
+}
+
 .body-1 {
   font-size: var(--b1);
   line-height: 1.67;
@@ -182,6 +188,10 @@ button:disabled {
   margin-bottom: 5rem;
 }
 
+.about h2 {
+  margin: 0.9em 0 0 0;
+}
+
 .about-pic-1 {
   box-shadow: var(--level-5);
   position: relative;
@@ -198,6 +208,10 @@ button:disabled {
   color: var(--white);
   padding-top: 1.75rem;
   padding-bottom: 2.75rem;
+}
+
+.menu-highlight h2 {
+  margin: 0.9em 0 0 0;
 }
 
 .menu-items {
@@ -218,11 +232,41 @@ button:disabled {
 
 .events {
   padding-top: 5rem;
-  padding-bottom: 2.75rem;
+  padding-bottom: 7.75rem;
+}
+
+.event-container h2 {
+  margin-top: 0.65em;
 }
 
 .tablist {
   margin-top: 2.75rem;
+  color: var(--darkGray);
+}
+
+.tablist h4 {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.tablist h4:hover {
+  opacity: 1;
+}
+
+.tablist h4[aria-selected="true"] {
+  opacity: 1;
+}
+
+.tablist h4::after {
+  display: block;
+  content: "";
+  width: 3rem;
+  height: 1px;
+  margin: 0 auto;
+}
+
+.tablist h4[aria-selected="true"]::after {
+  background: var(--beaver);
 }
 
 /* event tabs */
@@ -239,4 +283,32 @@ button:disabled {
   background: var(--bgDark);
   color: var(--white);
   background-image: url("./images/homepage/ready-bg-mobile@2x.jpg");
+  padding: 5.05rem 0;
+  background-size: cover;
+}
+
+.reserve button {
+  margin-top: 1.55rem;
+}
+
+footer {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.address {
+  margin-top: 2.25rem;
+}
+
+.hours {
+  margin-top: 2.25rem;
+}
+
+.footer-text {
+  font-size: var(--h4);
+  font-weight: 500;
+  line-height: 2;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 0;
 }

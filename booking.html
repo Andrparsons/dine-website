@@ -1,38 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Dine Website Challenge</title>
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  Reservations
+    <link
+      href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>dine</title>
+  </head>
+  <body>
+    <header>
+      <h1>
+        Reservations
+      </h1>
+      <p class="body-1">
+        We can’t wait to host you. If you have any special requirements please
+        feel free to call on the phone number below. We’ll be happy to
+        accommodate you.
+      </p>
+    </header>
 
-  We can’t wait to host you. If you have any special requirements please feel free to 
-  call on the phone number below. We’ll be happy to accommodate you.
+    <form action="submit">
+      <input type="text" placeholder="Name" id="name" required />
+      <input type="email" placeholder="Email" id="email" required />
+      <label for="date">
+        Pick a date
+      </label>
+      <input type="number" name="date" id="day" required />
+      <input type="number" name="date" id="month" required />
+      <input type="number" name="date" id="year" required />
+      <label for="time">
+        Pick a time
+      </label>
+      <input type="number" name="time" id="hour" required />
+      <input type="number" name="time" id="minute" required />
+      <select name="time" id="ampm" required>
+        <option value="AM">AM</option>
+        <option value="PM">PM</option>
+      </select>
+      <p>custom input for people goes here later</p>
+      <button class="btn-dark">
+        Make Reservation
+      </button>
+    </form>
 
+    <footer>
+      <div class="container">
+        <img class="logo-footer" src="./images/logo.svg" alt="dine logo" />
 
+        <div class="address">
+          <p class="footer-text">
+            Marthwaite, Sedbergh
+          </p>
+          <p class="footer-text">
+            Cumbria
+          </p>
+          <p class="footer-text">
+            +00 44 123 4567
+          </p>
+        </div>
 
-  Name
-  Email
-  Pick a date
-  Pick a time
-
-  Make Reservation
-
-
-
-  Marthwaite, Sedbergh
-  Cumbria
-  +00 44 123 4567
-
-  Open Times
-  Mon - Fri: 09:00 AM - 10:00 PM
-  Sat - Sun: 09:00 AM - 11:30 PM
-
-</body>
+        <div class="hours">
+          <p class="footer-text">
+            Open Times
+          </p>
+          <p class="footer-text">
+            Mon - Fri: 09:00 AM - 10:00 PM
+          </p>
+          <p class="footer-text">
+            Sat - Sun: 09:00 AM - 11:30 PM
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

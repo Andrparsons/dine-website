@@ -41,56 +41,71 @@
 
     <div class="about">
       <div class="container">
-        <picture>
-          <source
-            srcset="
-              ./images/homepage/enjoyable-place-tablet.jpg,
+        <div class="about-1">
+          <picture>
+            <source
+              media="(min-width:1200px)"
+              srcset="
+              ./images/homepage/enjoyable-place-desktop.jpg 1200w,
+              ./images/homepage/enjoyable-place-desktop@2x.jpg 2x
+            "
+            />
+            <source
+              srcset="
+              ./images/homepage/enjoyable-place-tablet.jpg 500w,
               ./images/homepage/enjoyable-place-tablet@2x.jpg 2x
             "
-            media="(min-width:600px)"
-          />
-          <source srcset="./images/homepage/enjoyable-place-mobile@2x.jpg 2x" />
+              media="(min-width: 500px)"
+            />
+            <img
+              class="about-pic-1"
+              srcset="
+                ./images/homepage/enjoyable-place-mobile.jpg,
+                ./images/homepage/enjoyable-place-mobile.jpg 2x
+              "
+              alt="enjoyable place"
+            />
+          </picture>
+
           <img
-            class="about-pic-1"
-            src="./images/homepage/enjoyable-place-mobile.jpg"
-            alt="enjoyable place"
+            class="pattern-divide"
+            src="./images/patterns/pattern-divide.svg"
           />
-        </picture>
 
-        <img
-          class="pattern-divide"
-          src="./images/patterns/pattern-divide.svg"
-        />
+          <h2>
+            Enjoyable place for all the family
+          </h2>
+          <p class="body-1">
+            Our relaxed surroundings make dining with us a great experience for
+            everyone. We can even arrange a tour of the farm before your meal.
+          </p>
+        </div>
 
-        <h2>
-          Enjoyable place for all the family
-        </h2>
-        <p class="body-1">
-          Our relaxed surroundings make dining with us a great experience for
-          everyone. We can even arrange a tour of the farm before your meal.
-        </p>
+        <div class="about-2">
+          <picture>
+            <source
+              srcset="./images/homepage/locally-sourced-mobile@2x.jpg 2x"
+            />
+            <img
+              class="about-pic-2"
+              src="./images/homepage/locally-sourced-mobile.jpg"
+              alt="Locally Sourced Food"
+            />
+          </picture>
 
-        <picture>
-          <source srcset="./images/homepage/locally-sourced-mobile@2x.jpg 2x" />
           <img
-            class="about-pic-2"
-            src="./images/homepage/locally-sourced-mobile.jpg"
-            alt="Locally Sourced Food"
+            class="pattern-divide"
+            src="./images/patterns/pattern-divide.svg"
           />
-        </picture>
-
-        <img
-          class="pattern-divide"
-          src="./images/patterns/pattern-divide.svg"
-        />
-        <h2>
-          The most locally sourced food
-        </h2>
-        <p class="body-1">
-          All our ingredients come directly from our farm or local fishery. So
-          you can be sure that you’re eating the freshest, most sustainable
-          food.
-        </p>
+          <h2>
+            The most locally sourced food
+          </h2>
+          <p class="body-1">
+            All our ingredients come directly from our farm or local fishery. So
+            you can be sure that you’re eating the freshest, most sustainable
+            food.
+          </p>
+        </div>
       </div>
     </div>
 

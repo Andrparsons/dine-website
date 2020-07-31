@@ -100,7 +100,8 @@ h4 {
 
 header {
   background-image: url("./images/homepage/hero-bg-mobile@2x.jpg");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
   color: var(--white);
   padding-top: 14.5rem;
   padding-bottom: 9.5em;
@@ -123,10 +124,10 @@ button {
   text-transform: uppercase;
   font-weight: 600;
   font-size: var(--fs-btn);
-  padding: 1.55em 3.75em;
+  padding: 1.8em 3.75em 1.5em 3.75em;
   letter-spacing: 2px;
-  line-height: 1.25;
-  margin-top: 1.25em;
+  line-height: 1.14;
+  margin-top: 1.15em;
 }
 
 button:disabled {
@@ -282,26 +283,31 @@ button:disabled {
 .reserve {
   background: var(--bgDark);
   color: var(--white);
+  padding: 4.9rem 0;
   background-image: url("./images/homepage/ready-bg-mobile@2x.jpg");
-  padding: 5.05rem 0;
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.reserve h2 {
+  margin-top: 0.15em;
 }
 
 .reserve button {
-  margin-top: 1.55rem;
+  margin-top: 1.35rem;
 }
 
 footer {
-  padding-top: 5rem;
+  padding-top: 5.1rem;
   padding-bottom: 5rem;
 }
 
 .address {
-  margin-top: 2.25rem;
+  margin-top: 2.35rem;
 }
 
 .hours {
-  margin-top: 2.25rem;
+  margin-top: 2rem;
 }
 
 .footer-text {

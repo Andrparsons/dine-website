@@ -32,7 +32,19 @@
   --bgDark: var(--codGray);
 }
 
-@media (min-width: 500px) {
+@media (min-width: 600px) {
+  :root {
+    --h1: 3em;
+    --h2: 2.5em;
+    --h3: 1.125em;
+    --h4: 0.875em;
+    --b1: 1.125em;
+    --b2: 0.9375em;
+    --fs-btn: 0.875em;
+  }
+}
+
+@media (min-width: 1200px) {
   :root {
     --h1: 4em;
     --h2: 2.5em;
@@ -102,15 +114,60 @@ h4 {
   margin: 1.15em 0 0 0;
 }
 
+@media (min-width: 500px) {
+  h1 {
+    line-height: 1.33;
+    letter-spacing: -0.6px;
+    max-width: 500px;
+  }
+}
+
 header {
-  background-image: url("./images/homepage/hero-bg-mobile@2x.jpg");
+  background-image: url("./images/homepage/hero-bg-mobile.jpg");
   background-size: contain;
   background-repeat: no-repeat;
+  background-position: top center;
   color: var(--white);
   padding-top: 14.5rem;
   padding-bottom: 9.5em;
   /* fallback incase pic doesn't load */
   background-color: var(--bgDark);
+}
+
+@media (min-width: 600px) {
+  header {
+    background-image: url("./images/homepage/hero-bg-tablet.jpg");
+    background-size: cover;
+    padding-top: 23.5rem;
+    padding-bottom: 9.5em;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    background-image: url("./images/homepage/hero-bg-desktop.jpg");
+  }
+}
+
+/* change background for hi-rez devices */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  header {
+    background-image: url("./images/homepage/hero-bg-mobile@2x.jpg");
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 600px),
+  (min-resolution: 192dpi) and (min-width: 600px) {
+  header {
+    background-image: url("./images/homepage/hero-bg-tablet@2x.jpg");
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px),
+  (min-resolution: 192dpi) and (min-width: 1200px) {
+  header {
+    background-image: url("./images/homepage/hero-bg-desktop@2x.jpg");
+  }
 }
 
 header .body-1 {
@@ -157,10 +214,25 @@ button:disabled {
 
 .container {
   padding: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 600px) {
+  .container {
+    padding: 0 6.125rem;
+  }
 }
 
 .logo {
   max-width: 5.15em;
+}
+
+@media (min-width: 600px) {
+  .logo {
+    max-width: 6.5em;
+  }
 }
 
 .logo-footer {
@@ -289,7 +361,7 @@ button:disabled {
   color: var(--white);
   padding: 4.9rem 0;
   background-image: url("./images/homepage/ready-bg-mobile@2x.jpg");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 

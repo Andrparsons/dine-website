@@ -86,7 +86,7 @@ h1 {
   font-weight: 300;
   line-height: 1.25;
   letter-spacing: -0.4px;
-  margin: 0.9em 0 0 0;
+  margin: 0;
 }
 
 h2 {
@@ -100,9 +100,9 @@ h2 {
 h3 {
   font-size: var(--h3);
   font-weight: 700;
-  line-height: 1.55;
-  letter-spacing: -0.22px;
-  margin: 1.6em 0 0 0;
+  line-height: 1.56;
+  letter-spacing: -0.225px;
+  margin: 0;
 }
 
 h4 {
@@ -111,7 +111,7 @@ h4 {
   line-height: 2;
   letter-spacing: 2px;
   text-transform: uppercase;
-  margin: 1.15em 0 0 0;
+  margin: 0;
 }
 
 @media (min-width: 500px) {
@@ -170,8 +170,12 @@ header {
   }
 }
 
+header h1 {
+  margin-top: 2.15rem;
+}
+
 header .body-1 {
-  margin-top: 1.6em;
+  margin-top: 1.5em;
 }
 
 footer {
@@ -250,7 +254,7 @@ button:disabled {
   font-size: var(--b2);
   line-height: 1.86;
   letter-spacing: -0.19px;
-  margin-top: 0.25em;
+  margin-top: 0.15em;
   margin-bottom: 1.5em;
   padding: 0 1em;
 }
@@ -263,11 +267,11 @@ button:disabled {
 /* about section */
 
 .about {
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 .about h2 {
-  margin: 0.9em 0 0 0;
+  margin-top: 2.1rem;
 }
 
 .about-pic-1 {
@@ -284,15 +288,19 @@ button:disabled {
   background: var(--bgDark);
   color: var(--white);
   padding-top: 1.75rem;
-  padding-bottom: 2.75rem;
+  padding-bottom: 2.95rem;
 }
 
 .menu-highlight h2 {
-  margin: 0.9em 0 0 0;
+  margin-top: 2.1rem;
+}
+
+.menu-highlight h3 {
+  margin-top: 1.85rem;
 }
 
 .menu-items {
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .menu-item {
@@ -322,6 +330,7 @@ button:disabled {
 }
 
 .tablist h4 {
+  margin-top: 1rem;
   opacity: 0.5;
   cursor: pointer;
 }
@@ -374,12 +383,12 @@ button:disabled {
 }
 
 footer {
-  padding-top: 5.1rem;
+  padding-top: 5.15rem;
   padding-bottom: 5rem;
 }
 
 .address {
-  margin-top: 2.35rem;
+  margin-top: 2.55rem;
 }
 
 .hours {

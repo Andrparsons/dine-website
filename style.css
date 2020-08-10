@@ -349,8 +349,12 @@ header .text-section {
 }
 
 @media (min-width: 1200px) {
+  .pattern-divide {
+    margin: -1em 0 0;
+  }
+
   .about-section-1 .pattern-divide {
-    margin: 2.95em 0 0 0;
+    margin: 2.75em 0 0 0;
   }
 
   .about-section-2 .pattern-divide {
@@ -449,11 +453,16 @@ header .text-section {
   }
 
   .about h2 {
-    margin: 3rem 0 0;
+    margin: 3.15rem 0 0;
   }
 
   .about .body-1 {
     margin: 1rem 0 0;
+  }
+
+  .about--pattern-container .decorative-lines {
+    bottom: 50.5%;
+    right: -7.125rem;
   }
 }
 
@@ -534,6 +543,39 @@ header .text-section {
     margin: 0.15em auto 0;
   }
 }
+
+@media (min-width: 1200px) {
+  .menu-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .menu-items {
+    max-width: 540px;
+    margin-top: 0.85rem;
+  }
+
+  .menu-item {
+    padding-bottom: 0.75rem;
+  }
+
+  .menu-highlight {
+    padding-top: 13.75rem;
+    padding-bottom: 6.05rem;
+  }
+
+  .menu-highlight h2 {
+    margin-top: 3.15rem;
+  }
+
+  .menu-highlight .pattern-divide {
+    margin-top: -1.25em;
+  }
+
+  .menu-container .body-1 {
+    margin-top: 0.85em;
+  }
+}
 /* events section */
 
 .events {
@@ -548,6 +590,12 @@ header .text-section {
 @media (min-width: 600px) {
   .events {
     padding-top: 7.5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .events {
+    padding-top: 10rem;
   }
 }
 

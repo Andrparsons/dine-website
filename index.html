@@ -250,199 +250,209 @@
     <div class="events">
       <div class="container">
         <div class="tabs">
-          <picture>
-            <source
-              media="(min-width: 1200px )"
-              srcset="
-                ./images/homepage/family-gathering-desktop.jpg,
-                ./images/homepage/family-gathering-desktop@2x.jpg 2x
-              "
-            />
-            <source
-              media="(min-width: 600px )"
-              srcset="
-                ./images/homepage/family-gathering-tablet.jpg,
-                ./images/homepage/family-gathering-tablet@2x.jpg 2x
-              "
-            />
+          <div class="tab-pictures">
             <img
+              class="decorative-lines"
+              src="./images/patterns/pattern-lines.svg"
+            />
+            <picture>
+              <source
+                media="(min-width: 1200px )"
+                srcset="
+                  ./images/homepage/family-gathering-desktop.jpg,
+                  ./images/homepage/family-gathering-desktop@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 600px )"
+                srcset="
+                  ./images/homepage/family-gathering-tablet.jpg,
+                  ./images/homepage/family-gathering-tablet@2x.jpg 2x
+                "
+              />
+              <img
+                role="tabpanel"
+                aria-labelledby="family"
+                class="visible-tab img-shadow"
+                srcset="
+                  ./images/homepage/family-gathering-mobile.jpg,
+                  ./images/homepage/family-gathering-mobile@2x.jpg 2x
+                "
+              />
+            </picture>
+
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/homepage/special-events-desktop.jpg,
+                  ./images/homepage/special-events-desktop@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 600px )"
+                srcset="
+                  ./images/homepage/special-events-tablet.jpg,
+                  ./images/homepage/special-events-tablet@2x.jpg 2x
+                "
+              />
+
+              <img
+                role="tabpanel"
+                aria-labelledby="special"
+                class="hidden-tab img-shadow"
+                srcset="
+                  ./images/homepage/special-events-mobile.jpg,
+                  ./images/homepage/special-events-mobile@2x.jpg 2x
+                "
+              />
+            </picture>
+
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./images/homepage/social-events-desktop.jpg,
+                  ./images/homepage/social-events-desktop@2x.jpg 2x
+                "
+              />
+              <source
+                media="(min-width: 600px)"
+                srcset="
+                  ./images/homepage/social-events-tablet.jpg,
+                  ./images/homepage/social-events-tablet@2x.jpg 2x
+                "
+              />
+              <img
+                role="tabpanel"
+                aria-labelledby="social"
+                class="hidden-tab img-shadow"
+                srcset="
+                  ./images/homepage/social-events-mobile.jpg,
+                  ./images/homepage/social-events-mobile@2x.jpg 2x
+                "
+              />
+            </picture>
+          </div>
+
+          <div class="tab-content">
+            <div class="tablist" role="tablist" aria-label="Events">
+              <h4 role="tab" aria-selected="true" id="family">
+                Family Gathering
+              </h4>
+              <h4 role="tab" aria-selected="false" id="special">
+                Special Events
+              </h4>
+              <h4 role="tab" aria-selected="false" id="social">
+                Social Events
+              </h4>
+            </div>
+
+            <div
+              class="event-container visible-tab text-section"
               role="tabpanel"
               aria-labelledby="family"
-              class="visible-tab img-shadow"
-              srcset="
-                ./images/homepage/family-gathering-mobile.jpg,
-                ./images/homepage/family-gathering-mobile@2x.jpg 2x
-              "
-            />
-          </picture>
+            >
+              <h2>
+                Family Gathering
+              </h2>
+              <p class="body-1">
+                We love catering for entire families. So please bring everyone
+                along for a special meal with your loved ones. We’ll provide a
+                memorable experience for all.
+              </p>
+              <a href="./booking.html">
+                <button class="btn-dark">
+                  Book a table
+                </button>
+              </a>
+            </div>
 
-          <picture>
-            <source
-              media="(min-width: 1200px)"
-              srcset="
-                ./images/homepage/special-events-desktop.jpg,
-                ./images/homepage/special-events-desktop@2x.jpg 2x
-              "
-            />
-            <source
-              media="(min-width: 600px )"
-              srcset="
-                ./images/homepage/special-events-tablet.jpg,
-                ./images/homepage/special-events-tablet@2x.jpg 2x
-              "
-            />
-
-            <img
+            <div
+              class="event-container hidden-tab"
               role="tabpanel"
               aria-labelledby="special"
-              class="hidden-tab img-shadow"
-              srcset="
-                ./images/homepage/special-events-mobile.jpg,
-                ./images/homepage/special-events-mobile@2x.jpg 2x
-              "
-            />
-          </picture>
+            >
+              <h2>
+                Special Events
+              </h2>
+              <p class="body-1">
+                Whether it’s a romantic dinner or special date you’re
+                celebrating with others we’ll look after you. We’ll be sure to
+                mark your special date with an unforgettable meal.
+              </p>
+              <a href="./booking.html">
+                <button class="btn-dark">
+                  Book a table
+                </button>
+              </a>
+            </div>
 
-          <picture>
-            <source
-              media="(min-width: 1200px)"
-              srcset="
-                ./images/homepage/social-events-desktop.jpg,
-                ./images/homepage/social-events-desktop@2x.jpg 2x
-              "
-            />
-            <source
-              media="(min-width: 600px)"
-              srcset="
-                ./images/homepage/social-events-tablet.jpg,
-                ./images/homepage/social-events-tablet@2x.jpg 2x
-              "
-            />
-            <img
+            <div
+              class="event-container hidden-tab"
               role="tabpanel"
               aria-labelledby="social"
-              class="hidden-tab img-shadow"
-              srcset="
-                ./images/homepage/social-events-mobile.jpg,
-                ./images/homepage/social-events-mobile@2x.jpg 2x
-              "
-            />
-          </picture>
-
-          <div class="tablist" role="tablist" aria-label="Events">
-            <h4 role="tab" aria-selected="true" id="family">
-              Family Gathering
-            </h4>
-            <h4 role="tab" aria-selected="false" id="special">
-              Special Events
-            </h4>
-            <h4 role="tab" aria-selected="false" id="social">
-              Social Events
-            </h4>
-          </div>
-
-          <div
-            class="event-container visible-tab"
-            role="tabpanel"
-            aria-labelledby="family"
-          >
-            <h2>
-              Family Gathering
-            </h2>
-            <p class="body-1">
-              We love catering for entire families. So please bring everyone
-              along for a special meal with your loved ones. We’ll provide a
-              memorable experience for all.
-            </p>
-            <a href="./booking.html">
-              <button class="btn-dark">
-                Book a table
-              </button>
-            </a>
-          </div>
-
-          <div
-            class="event-container hidden-tab"
-            role="tabpanel"
-            aria-labelledby="special"
-          >
-            <h2>
-              Special Events
-            </h2>
-            <p class="body-1">
-              Whether it’s a romantic dinner or special date you’re celebrating
-              with others we’ll look after you. We’ll be sure to mark your
-              special date with an unforgettable meal.
-            </p>
-            <a href="./booking.html">
-              <button class="btn-dark">
-                Book a table
-              </button>
-            </a>
-          </div>
-
-          <div
-            class="event-container hidden-tab"
-            role="tabpanel"
-            aria-labelledby="social"
-          >
-            <h2>
-              Social Events
-            </h2>
-            <p class="body-1">
-              Are you looking to have a larger social event? No problem! We’re
-              more than happy to cater for big parties. We’ll work with you to
-              make your event a hit with everyone.
-            </p>
-            <a href="./booking.html">
-              <button class="btn-dark">
-                Book a table
-              </button>
-            </a>
+            >
+              <h2>
+                Social Events
+              </h2>
+              <p class="body-1">
+                Are you looking to have a larger social event? No problem! We’re
+                more than happy to cater for big parties. We’ll work with you to
+                make your event a hit with everyone.
+              </p>
+              <a href="./booking.html">
+                <button class="btn-dark">
+                  Book a table
+                </button>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <div class="reserve">
-      <div class="container">
-        <h2>
-          Ready to make a reservation?
-        </h2>
-        <a href="./booking.html">
-          <button class="btn-dark btn-transparent">
-            Book a table
-          </button>
-        </a>
-      </div>
+      <h2>
+        Ready to make a reservation?
+      </h2>
+      <a href="./booking.html">
+        <button class="btn-dark btn-transparent">
+          Book a table
+        </button>
+      </a>
     </div>
 
     <footer>
-      <div class="container">
-        <img class="logo-footer" src="./images/logo.svg" alt="dine logo" />
-
-        <div class="address">
-          <p class="footer-text">
-            Marthwaite, Sedbergh
-          </p>
-          <p class="footer-text">
-            Cumbria
-          </p>
-          <p class="footer-text">
-            +00 44 123 4567
-          </p>
+      <div class="footer-container">
+        <div class="footer-logo-container">
+          <img class="logo-footer" src="./images/logo.svg" alt="dine logo" />
         </div>
 
-        <div class="hours">
-          <p class="footer-text">
-            Open Times
-          </p>
-          <p class="footer-text">
-            Mon - Fri: 09:00 AM - 10:00 PM
-          </p>
-          <p class="footer-text">
-            Sat - Sun: 09:00 AM - 11:30 PM
-          </p>
+        <div class="footer-content">
+          <div class="address">
+            <p class="footer-text">
+              Marthwaite, Sedbergh
+            </p>
+            <p class="footer-text">
+              Cumbria
+            </p>
+            <p class="footer-text">
+              +00 44 123 4567
+            </p>
+          </div>
+
+          <div class="hours">
+            <p class="footer-text">
+              Open Times
+            </p>
+            <p class="footer-text">
+              Mon - Fri: 09:00 AM - 10:00 PM
+            </p>
+            <p class="footer-text">
+              Sat - Sun: 09:00 AM - 11:30 PM
+            </p>
+          </div>
         </div>
       </div>
     </footer>
